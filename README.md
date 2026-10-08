@@ -1,20 +1,218 @@
-# Fermor — Homepage Concept
-Next.js 14 (App Router) + plain CSS. No UI libraries.
-## Setup
-`npm install && npm run dev` → http://localhost:3000 · Deploy: import the repo on Vercel (zero config).
-## Decisions
-- **Show, don't tell:** each section is an interaction (net-worth orbit, health score, goal picker, SIP calculator, risk/return, future timeline) instead of feature cards.
-- **Motion in layers:** slow ambient (globe) → hover → scroll (hero parallax) → click. Honors `prefers-reduced-motion`.
-- **Palette:** Fermor's green identity (forest/green/mint), Georgia headlines, light + dark themes via CSS tokens.
-- **Compliance:** every projection is labelled illustrative, not advice. All figures are mock data.
-## Next
-Real 3D globe asset, EMI/Tax/NPS calculators, article pages.
+# Fermor — Homepage Redesign
 
-## v2 changes
-Mouse-tilt hero, count-up numbers, Money Snapshot, computed health score (weakest dimension flagged), editable goal planner, SIP/EMI/Retirement calculators, 4-way invest playground, featured insight layout, mobile menu, theme toggle.
+A modern, interactive homepage redesign concept for **Fermor**, focused on making financial decisions easier to understand through visual storytelling, interactive tools, and a premium fintech experience.
 
-## v4
-Logo fixed ("fermor" fully spelled; swap in the official SVG via components/Shell.jsx `Logo`). 3-layer hero parallax, richer phone UI, goal timeline, health hover insights, tool tabs, investment rows, animated projection, brand statement.
+## 🔗 Links
 
-## Brand
-Uses the official Fermor F mark (public/logo.png, favicon app/icon.png) and a lime palette sampled from it. The "o" in the wordmark is a pulsing dot (.od in globals.css).
+- **Live Demo:** https://fermor-homepage-redesign.vercel.app/
+- **GitHub:** https://github.com/viswanikhitha11/fermor-homepage-redesign
+
+---
+
+## 🎯 Project Overview
+
+This project redesigns the Fermor homepage with a focus on:
+
+- Clear financial storytelling
+- Interactive financial experiences
+- Premium visual design
+- Responsive layouts
+- Subtle motion and micro-interactions
+- Simple and accessible user experience
+
+Instead of presenting financial features as traditional static cards, the homepage turns important financial concepts into interactive sections.
+
+---
+
+## ✨ Key Features
+
+### Interactive Hero
+
+- Premium financial dashboard visual
+- Animated financial data
+- Mouse-based interaction
+- Floating visual elements
+- Responsive hero experience
+
+### Financial Snapshot
+
+A visual overview of:
+
+- Net worth
+- Investments
+- Savings
+- Goal progress
+- Financial position
+
+### Financial Health Score
+
+Interactive financial health visualization with:
+
+- Overall health score
+- Savings status
+- Debt status
+- Protection status
+- Investment status
+- Dynamic score interaction
+
+### Goal Planner
+
+Users can explore different financial goals:
+
+- Buy a Home
+- Build Wealth
+- Protect Family
+- Education
+- Retirement
+
+The selected goal dynamically updates the target, timeline, progress and supporting information.
+
+### Financial Tools
+
+Interactive financial tools including:
+
+- SIP & Lumpsum
+- EMI & Home Loan
+- Income Tax
+- NPS, PPF & EPF
+
+The SIP calculator provides an interactive monthly investment projection.
+
+### Investment Playground
+
+A visual comparison of different investment categories based on illustrative:
+
+- Returns
+- Risk levels
+- Investment types
+
+### Future Wealth Projection
+
+An interactive timeline allows users to change the investment horizon and view an illustrative future wealth projection.
+
+### Financial Insights
+
+An editorial-style section covering topics related to:
+
+- Investing
+- Tax & salary
+- Financial planning
+
+### Light & Dark Theme
+
+The application supports both light and dark visual themes using CSS design tokens.
+
+### Responsive Design
+
+The homepage is designed for:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+---
+
+## 🎨 Design Direction
+
+The design follows a premium fintech visual language using Fermor's green identity.
+
+### Color Palette
+
+| Color | Usage |
+|---|---|
+| `#0B241B` | Forest green |
+| `#2F7654` | Primary green |
+| `#BCEFD0` | Mint accent |
+| `#F7F8F4` | Light background |
+| `#68776F` | Secondary text |
+
+The interface uses minimal cards, clean typography, subtle borders, soft shadows and restrained animation.
+
+---
+
+## 🧠 Design Decisions
+
+### Show, Don't Tell
+
+Major sections are designed as interactions instead of static feature blocks.
+
+For example:
+
+- Financial Health → interactive score
+- Goals → interactive goal selection
+- Tools → interactive calculator
+- Planning → interactive timeline
+- Investing → visual comparison
+
+### Motion in Layers
+
+Motion is intentionally subtle and follows a hierarchy:
+
+1. Ambient movement
+2. Hero interaction
+3. Scroll-based reveals
+4. Hover interactions
+5. Data animations
+6. User-driven interactions
+
+Animations are used to improve storytelling rather than distract from the content.
+
+### Mobile-First Thinking
+
+The layout adapts content hierarchy and interactions for smaller screens rather than simply shrinking the desktop layout.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js 14**
+- **React**
+- **JavaScript / JSX**
+- **Next.js App Router**
+- **CSS**
+- **SVG**
+- **IntersectionObserver**
+- **CSS animations and transitions**
+
+No UI component library was used.
+
+---
+
+## 📁 Project Structure
+
+```text
+fermor-homepage-redesign/
+│
+├── app/
+│   ├── globals.css
+│   ├── layout.jsx
+│   └── page.jsx
+│
+├── components/
+│   ├── Shell.jsx
+│   └── Sections.jsx
+│
+├── public/
+│   ├── logo.png
+│   └── ...
+│
+├── package.json
+├── package-lock.json
+├── README.md
+└── .gitignore
+
+## 📸 Screenshots
+
+### Desktop — Hero
+
+![Fermor Homepage Hero](public/screenshots/Hero.png)
+
+### Interactive Financial Sections
+
+![Fermor Financial Sections](public/screenshots/Features.png)
+
+### Mobile Responsive Design
+
+![Fermor Mobile Experience](public/screenshots/Mobile1.png)
+![Fermor Mobile Experience](public/screenshots/Mobile2.png)
